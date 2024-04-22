@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const cardSchema = mongoose.Schema({
     // Información de la tarjeta de credito
     numero: {
-        type: Integer,
+        type: Number,
         required: true,
     },
     fechaVencimiento: {
@@ -10,7 +10,7 @@ const cardSchema = mongoose.Schema({
         required: true,
     },
     cvv: {
-        type: Integer,
+        type: Number,
         required: true,
     },
     tipo: {
@@ -18,7 +18,7 @@ const cardSchema = mongoose.Schema({
         required: true,
     },
     cupo: {
-        type: Float,
+        type: Number,
         required: true,
     },
     // Información del titular de la tarjeta
@@ -27,7 +27,7 @@ const cardSchema = mongoose.Schema({
         required: true,
     },
     contacto: {
-        type: Integer,
+        type: Number,
         required: true,
     },
     correo: {
